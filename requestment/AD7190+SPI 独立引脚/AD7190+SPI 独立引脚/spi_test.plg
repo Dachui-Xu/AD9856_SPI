@@ -1,0 +1,782 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+E:\Project\Nonstandard_SPI\requestment\AD7190+SPI 独立引脚\AD7190+SPI 独立引脚\spi_test.uvproj
+Project File Date:  07/14/2023
+
+<h2>Output:</h2>
+compiling main.c...
+MAIN.C(43): error C129: missing ';' before 'data'
+main.c - 1 Error(s), 0 Warning(s).
+compiling main.c...
+MAIN.C(43): error C141: syntax error near '['
+main.c - 1 Error(s), 0 Warning(s).
+compiling main.c...
+MAIN.C(43): error C141: syntax error near '['
+main.c - 1 Error(s), 0 Warning(s).
+compiling main.c...
+MAIN.C(40): error C141: syntax error near 'unsigned'
+MAIN.C(43): error C141: syntax error near '['
+main.c - 2 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(40): error C141: syntax error near 'unsigned'
+MAIN.C(43): error C141: syntax error near '['
+Target not created
+compiling main.c...
+main.c - 0 Error(s), 0 Warning(s).
+compiling main.c...
+MAIN.C(42): error C141: syntax error near '['
+main.c - 1 Error(s), 0 Warning(s).
+compiling main.c...
+MAIN.C(42): error C141: syntax error near '['
+main.c - 1 Error(s), 0 Warning(s).
+compiling main.c...
+MAIN.C(42): error C141: syntax error near '['
+main.c - 1 Error(s), 0 Warning(s).
+compiling main.c...
+MAIN.C(42): error C141: syntax error near 'data'
+MAIN.C(42): error C141: syntax error near '['
+main.c - 2 Error(s), 0 Warning(s).
+compiling main.c...
+MAIN.C(42): error C141: syntax error near '['
+main.c - 1 Error(s), 0 Warning(s).
+compiling main.c...
+main.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_DRAWPOINT?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_UNDRAWPOINT?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?OLED_CLS?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?OLED_INIT?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_P6X8STR?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_P8X16STR?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_P16X16CH?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DRAW_BMP?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?AD7190_RESET_SERIAL?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_AD7190_WR8_SERIAL?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_AD7190_WR24_SERIAL?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?AD7190_RD32_SERIAL?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?AD7190_RD24_SERIAL?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?UART_INIT?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?WEITEIC?MAIN
+Program Size: data=9.0 xdata=113 code=8189
+creating hex file from "spi_test"...
+"spi_test" - 0 Error(s), 15 Warning(s).
+compiling main.c...
+main.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_DRAWPOINT?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_UNDRAWPOINT?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?OLED_CLS?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?OLED_INIT?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_P6X8STR?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_P8X16STR?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_P16X16CH?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DRAW_BMP?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?AD7190_RESET_SERIAL?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_AD7190_WR8_SERIAL?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_AD7190_WR24_SERIAL?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?AD7190_RD32_SERIAL?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?AD7190_RD24_SERIAL?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?UART_INIT?MAIN
+Program Size: data=9.0 xdata=127 code=8299
+creating hex file from "spi_test"...
+"spi_test" - 0 Error(s), 14 Warning(s).
+compiling main.c...
+MAIN.C(29): error C141: syntax error near ')'
+MAIN.C(33): error C141: syntax error near ')'
+MAIN.C(40): error C202: 'aRxBuffer': undefined identifier
+MAIN.C(42): error C202: 'Uart1_Rx_Cnt': undefined identifier
+MAIN.C(43): error C202: 'Uart1_Rx_Cnt': undefined identifier
+MAIN.C(44): error C202: 'RxBuffer': undefined identifier
+main.c - 6 Error(s), 0 Warning(s).
+compiling main.c...
+main.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_DRAWPOINT?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_UNDRAWPOINT?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?OLED_CLS?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?OLED_INIT?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_P6X8STR?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_P8X16STR?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_P16X16CH?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DRAW_BMP?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?AD7190_RESET_SERIAL?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_AD7190_WR8_SERIAL?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_AD7190_WR24_SERIAL?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?AD7190_RD32_SERIAL?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?AD7190_RD24_SERIAL?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?UART_INIT?MAIN
+Program Size: data=9.0 xdata=127 code=8267
+creating hex file from "spi_test"...
+"spi_test" - 0 Error(s), 14 Warning(s).
+compiling main.c...
+MAIN.C(29): error C141: syntax error near ')'
+MAIN.C(33): error C141: syntax error near ')'
+MAIN.C(40): error C202: 'aRxBuffer': undefined identifier
+MAIN.C(42): error C202: 'Uart1_Rx_Cnt': undefined identifier
+MAIN.C(43): error C202: 'Uart1_Rx_Cnt': undefined identifier
+MAIN.C(44): error C202: 'RxBuffer': undefined identifier
+main.c - 6 Error(s), 0 Warning(s).
+compiling main.c...
+MAIN.C(16): error C129: missing ';' before 'RxBuffer'
+main.c - 1 Error(s), 0 Warning(s).
+compiling main.c...
+MAIN.C(16): error C129: missing ';' before 'aRxBuffer'
+main.c - 1 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(16): error C129: missing ';' before 'aRxBuffer'
+Target not created
+compiling main.c...
+MAIN.C(16): error C202: 'RXBUFFERSIZE': undefined identifier
+MAIN.C(16): error C136: invalid dimension size: [0]
+MAIN.C(32): error C141: syntax error near ')'
+MAIN.C(36): error C141: syntax error near ')'
+MAIN.C(45): error C202: 'BUFFER_SIZE': undefined identifier
+main.c - 5 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(16): error C202: 'RXBUFFERSIZE': undefined identifier
+MAIN.C(16): error C136: invalid dimension size: [0]
+MAIN.C(32): error C141: syntax error near ')'
+MAIN.C(36): error C141: syntax error near ')'
+MAIN.C(45): error C202: 'BUFFER_SIZE': undefined identifier
+Target not created
+compiling main.c...
+MAIN.C(16): error C129: missing ';' before 'RxBuffer'
+main.c - 1 Error(s), 0 Warning(s).
+compiling main.c...
+MAIN.C(15): error C129: missing ';' before 'RxBuffer'
+main.c - 1 Error(s), 0 Warning(s).
+compiling main.c...
+MAIN.C(15): error C202: 'RXBUFFERSIZE': undefined identifier
+MAIN.C(15): error C136: invalid dimension size: [0]
+MAIN.C(31): error C141: syntax error near ')'
+MAIN.C(35): error C141: syntax error near ')'
+MAIN.C(44): error C202: 'BUFFER_SIZE': undefined identifier
+main.c - 5 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(15): error C202: 'RXBUFFERSIZE': undefined identifier
+MAIN.C(15): error C136: invalid dimension size: [0]
+MAIN.C(31): error C141: syntax error near ')'
+MAIN.C(35): error C141: syntax error near ')'
+MAIN.C(44): error C202: 'BUFFER_SIZE': undefined identifier
+Target not created
+compiling main.c...
+MAIN.C(15): error C202: 'RXBUFFERSIZE': undefined identifier
+MAIN.C(15): error C136: invalid dimension size: [0]
+MAIN.C(31): error C141: syntax error near ')'
+MAIN.C(35): error C141: syntax error near ')'
+MAIN.C(44): error C202: 'BUFFER_SIZE': undefined identifier
+main.c - 5 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(15): error C202: 'RXBUFFERSIZE': undefined identifier
+MAIN.C(15): error C136: invalid dimension size: [0]
+MAIN.C(31): error C141: syntax error near ')'
+MAIN.C(35): error C141: syntax error near ')'
+MAIN.C(44): error C202: 'BUFFER_SIZE': undefined identifier
+Target not created
+compiling main.c...
+MAIN.C(15): error C129: missing ';' before 'RxBuffer'
+main.c - 1 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(15): error C129: missing ';' before 'RxBuffer'
+Target not created
+compiling main.c...
+MAIN.C(15): error C129: missing ';' before 'RxBuffer'
+main.c - 1 Error(s), 0 Warning(s).
+compiling main.c...
+MAIN.C(12): error C141: syntax error near 'unsigned'
+MAIN.C(15): error C202: 'RXBUFFERSIZE': undefined identifier
+MAIN.C(15): error C136: invalid dimension size: [0]
+MAIN.C(31): error C141: syntax error near ')'
+MAIN.C(35): error C141: syntax error near ')'
+MAIN.C(44): error C202: 'BUFFER_SIZE': undefined identifier
+main.c - 6 Error(s), 0 Warning(s).
+compiling main.c...
+MAIN.C(15): error C202: 'RXBUFFERSIZE': undefined identifier
+MAIN.C(15): error C136: invalid dimension size: [0]
+MAIN.C(31): error C141: syntax error near ')'
+MAIN.C(35): error C141: syntax error near ')'
+MAIN.C(44): error C202: 'BUFFER_SIZE': undefined identifier
+main.c - 5 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(15): error C202: 'RXBUFFERSIZE': undefined identifier
+MAIN.C(15): error C136: invalid dimension size: [0]
+MAIN.C(31): error C141: syntax error near ')'
+MAIN.C(35): error C141: syntax error near ')'
+MAIN.C(44): error C202: 'BUFFER_SIZE': undefined identifier
+Target not created
+compiling main.c...
+MAIN.C(15): error C202: 'RXBUFFERSIZE': undefined identifier
+MAIN.C(15): error C136: invalid dimension size: [0]
+MAIN.C(31): error C141: syntax error near ')'
+MAIN.C(35): error C141: syntax error near ')'
+MAIN.C(44): error C202: 'BUFFER_SIZE': undefined identifier
+main.c - 5 Error(s), 0 Warning(s).
+compiling main.c...
+MAIN.C(12): error C141: syntax error near 'unsigned'
+MAIN.C(15): error C202: 'RXBUFFERSIZE': undefined identifier
+MAIN.C(15): error C136: invalid dimension size: [0]
+MAIN.C(31): error C141: syntax error near ')'
+MAIN.C(35): error C141: syntax error near ')'
+MAIN.C(44): error C202: 'BUFFER_SIZE': undefined identifier
+main.c - 6 Error(s), 0 Warning(s).
+compiling main.c...
+MAIN.C(14): error C141: syntax error near 'unsigned'
+MAIN.C(33): error C141: syntax error near ')'
+MAIN.C(37): error C141: syntax error near ')'
+main.c - 3 Error(s), 0 Warning(s).
+compiling main.c...
+MAIN.C(14): error C141: syntax error near 'unsigned'
+MAIN.C(33): error C141: syntax error near ')'
+MAIN.C(37): error C141: syntax error near ')'
+main.c - 3 Error(s), 0 Warning(s).
+compiling main.c...
+MAIN.C(33): error C141: syntax error near ')'
+MAIN.C(37): error C141: syntax error near ')'
+main.c - 2 Error(s), 0 Warning(s).
+compiling main.c...
+MAIN.C(33): error C141: syntax error near ')'
+MAIN.C(37): error C141: syntax error near ')'
+main.c - 2 Error(s), 0 Warning(s).
+compiling main.c...
+main.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_DRAWPOINT?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_UNDRAWPOINT?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?OLED_CLS?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?OLED_INIT?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_P6X8STR?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_P8X16STR?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_P16X16CH?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DRAW_BMP?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?AD7190_RESET_SERIAL?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_AD7190_WR8_SERIAL?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_AD7190_WR24_SERIAL?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?AD7190_RD32_SERIAL?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?AD7190_RD24_SERIAL?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?UART_INIT?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_UART_SENDSTRING?MAIN
+Program Size: data=9.0 xdata=388 code=8355
+creating hex file from "spi_test"...
+"spi_test" - 0 Error(s), 15 Warning(s).
+compiling main.c...
+MAIN.C(45): error C141: syntax error near ')'
+MAIN.C(49): error C141: syntax error near ')'
+MAIN.C(67): error C141: syntax error near 'data'
+MAIN.C(69): error C141: syntax error near 'data'
+main.c - 4 Error(s), 0 Warning(s).
+compiling main.c...
+MAIN.C(21): error C141: syntax error near '['
+main.c - 1 Error(s), 0 Warning(s).
+compiling main.c...
+MAIN.C(21): error C141: syntax error near 'data'
+MAIN.C(21): error C141: syntax error near '['
+main.c - 2 Error(s), 0 Warning(s).
+compiling main.c...
+MAIN.C(21): error C141: syntax error near '['
+main.c - 1 Error(s), 0 Warning(s).
+compiling main.c...
+MAIN.C(21): error C141: syntax error near '['
+main.c - 1 Error(s), 0 Warning(s).
+compiling main.c...
+MAIN.C(21): error C141: syntax error near '['
+main.c - 1 Error(s), 0 Warning(s).
+compiling main.c...
+MAIN.C(21): error C141: syntax error near '['
+main.c - 1 Error(s), 0 Warning(s).
+compiling main.c...
+MAIN.C(21): error C141: syntax error near '['
+main.c - 1 Error(s), 0 Warning(s).
+compiling main.c...
+MAIN.C(21): error C141: syntax error near '['
+main.c - 1 Error(s), 0 Warning(s).
+compiling main.c...
+MAIN.C(21): error C141: syntax error near '['
+main.c - 1 Error(s), 0 Warning(s).
+compiling main.c...
+MAIN.C(21): error C141: syntax error near '['
+main.c - 1 Error(s), 0 Warning(s).
+compiling main.c...
+MAIN.C(21): error C141: syntax error near '['
+main.c - 1 Error(s), 0 Warning(s).
+compiling main.c...
+MAIN.C(21): error C141: syntax error near '['
+main.c - 1 Error(s), 0 Warning(s).
+compiling main.c...
+main.c - 0 Error(s), 0 Warning(s).
+compiling main.c...
+main.c - 0 Error(s), 0 Warning(s).
+compiling main.c...
+MAIN.C(21): error C141: syntax error near '['
+main.c - 1 Error(s), 0 Warning(s).
+compiling main.c...
+main.c - 0 Error(s), 0 Warning(s).
+compiling main.c...
+MAIN.C(20): error C141: syntax error near '['
+main.c - 1 Error(s), 0 Warning(s).
+compiling main.c...
+MAIN.C(53): warning C206: 'delay': missing function-prototype
+MAIN.C(53): error C267: 'delay': requires ANSI-style prototype
+main.c - 1 Error(s), 1 Warning(s).
+compiling main.c...
+main.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_DRAWPOINT?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_UNDRAWPOINT?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?OLED_CLS?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?OLED_INIT?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_P6X8STR?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_P8X16STR?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_P16X16CH?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DRAW_BMP?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?AD7190_RESET_SERIAL?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_AD7190_WR8_SERIAL?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_AD7190_WR24_SERIAL?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?AD7190_RD32_SERIAL?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?AD7190_RD24_SERIAL?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?UART_INIT?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_UART_SENDSTRING?MAIN
+Program Size: data=9.0 xdata=428 code=8399
+creating hex file from "spi_test"...
+"spi_test" - 0 Error(s), 15 Warning(s).
+compiling main.c...
+main.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_DRAWPOINT?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_UNDRAWPOINT?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?OLED_CLS?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?OLED_INIT?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_P6X8STR?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_P8X16STR?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_P16X16CH?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DRAW_BMP?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?AD7190_RESET_SERIAL?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_AD7190_WR8_SERIAL?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_AD7190_WR24_SERIAL?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?AD7190_RD32_SERIAL?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?AD7190_RD24_SERIAL?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?UART_INIT?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_UART_SENDSTRING?MAIN
+Program Size: data=9.0 xdata=420 code=8391
+creating hex file from "spi_test"...
+"spi_test" - 0 Error(s), 15 Warning(s).
+compiling main.c...
+MAIN.C(58): warning C280: 'datatem': unreferenced local variable
+MAIN.C(114): error C208: '_weiteIC': too many actual parameters
+main.c - 1 Error(s), 1 Warning(s).
+compiling main.c...
+MAIN.C(58): warning C280: 'datatem': unreferenced local variable
+main.c - 0 Error(s), 1 Warning(s).
+compiling main.c...
+MAIN.C(58): warning C280: 'datatem': unreferenced local variable
+main.c - 0 Error(s), 1 Warning(s).
+compiling main.c...
+MAIN.C(68): warning C206: 'AD9850_Write': missing function-prototype
+MAIN.C(68): error C267: 'AD9850_Write': requires ANSI-style prototype
+MAIN.C(68): error C141: syntax error near 'data'
+main.c - 2 Error(s), 1 Warning(s).
+compiling main.c...
+MAIN.C(68): error C141: syntax error near 'data'
+main.c - 1 Error(s), 0 Warning(s).
+compiling main.c...
+MAIN.C(68): error C141: syntax error near 'data'
+main.c - 1 Error(s), 0 Warning(s).
+compiling main.c...
+main.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_DRAWPOINT?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_UNDRAWPOINT?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?OLED_CLS?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?OLED_INIT?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_P6X8STR?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_P8X16STR?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_P16X16CH?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DRAW_BMP?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?AD7190_RESET_SERIAL?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_AD7190_WR8_SERIAL?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_AD7190_WR24_SERIAL?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?AD7190_RD32_SERIAL?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?AD7190_RD24_SERIAL?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?UART_INIT?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_UART_SENDSTRING?MAIN
+Program Size: data=9.0 xdata=409 code=8309
+creating hex file from "spi_test"...
+"spi_test" - 0 Error(s), 15 Warning(s).
+compiling main.c...
+main.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling STARTUP.A51...
+compiling main.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_DRAWPOINT?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_UNDRAWPOINT?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?OLED_CLS?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?OLED_INIT?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_P6X8STR?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_P8X16STR?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_P16X16CH?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DRAW_BMP?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?AD7190_RESET_SERIAL?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_AD7190_WR8_SERIAL?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_AD7190_WR24_SERIAL?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?AD7190_RD32_SERIAL?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?AD7190_RD24_SERIAL?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?UART_INIT?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_UART_SENDSTRING?MAIN
+Program Size: data=9.0 xdata=409 code=8309
+creating hex file from "spi_test"...
+"spi_test" - 0 Error(s), 15 Warning(s).
+compiling main.c...
+MAIN.C(58): error C141: syntax error near '*', expected ')'
+MAIN.C(59): error C141: syntax error near 'reg'
+MAIN.C(59): error C202: 'reg': undefined identifier
+MAIN.C(60): error C202: 'uint32_t': undefined identifier
+MAIN.C(60): error C141: syntax error near 'datatem'
+MAIN.C(61): error C141: syntax error near 'data'
+MAIN.C(61): error C202: 'reg': undefined identifier
+MAIN.C(62): error C202: 'reg': undefined identifier
+MAIN.C(62): error C141: syntax error near 'data'
+MAIN.C(69): error C141: syntax error near 'int'
+MAIN.C(69): error C202: 'i': undefined identifier
+MAIN.C(69): error C202: 'i': undefined identifier
+MAIN.C(69): error C202: 'i': undefined identifier
+MAIN.C(69): error C141: syntax error near ')'
+MAIN.C(70): error C141: syntax error near 'data'
+MAIN.C(78): error C141: syntax error near '*', expected ')'
+MAIN.C(79): error C202: 'uint32_t': undefined identifier
+MAIN.C(79): error C141: syntax error near 'datatem'
+MAIN.C(82): error C141: syntax error near 'data'
+main.c - 19 Error(s), 0 Warning(s).
+compiling main.c...
+MAIN.C(58): error C141: syntax error near ')'
+MAIN.C(59): error C202: 'uint8_t': undefined identifier
+MAIN.C(59): error C141: syntax error near 'reg'
+MAIN.C(60): error C202: 'uint32_t': undefined identifier
+MAIN.C(60): error C141: syntax error near 'datatem'
+MAIN.C(61): error C141: syntax error near 'data'
+MAIN.C(61): error C202: 'reg': undefined identifier
+MAIN.C(62): error C202: 'reg': undefined identifier
+MAIN.C(62): error C141: syntax error near 'data'
+MAIN.C(69): error C141: syntax error near 'int'
+MAIN.C(69): error C202: 'i': undefined identifier
+MAIN.C(69): error C202: 'i': undefined identifier
+MAIN.C(69): error C202: 'i': undefined identifier
+MAIN.C(69): error C141: syntax error near ')'
+MAIN.C(70): error C141: syntax error near 'data'
+MAIN.C(78): error C141: syntax error near '*', expected ')'
+MAIN.C(79): error C202: 'uint32_t': undefined identifier
+MAIN.C(79): error C141: syntax error near 'datatem'
+MAIN.C(82): error C141: syntax error near 'data'
+main.c - 19 Error(s), 0 Warning(s).
+compiling main.c...
+MAIN.C(58): error C141: syntax error near ')'
+MAIN.C(59): error C202: 'uint8_t': undefined identifier
+MAIN.C(59): error C141: syntax error near 'reg'
+MAIN.C(60): error C202: 'uint32_t': undefined identifier
+MAIN.C(60): error C141: syntax error near 'datatem'
+MAIN.C(61): error C141: syntax error near 'data'
+MAIN.C(61): error C202: 'reg': undefined identifier
+MAIN.C(62): error C202: 'reg': undefined identifier
+MAIN.C(62): error C141: syntax error near 'data'
+MAIN.C(69): error C141: syntax error near 'int'
+MAIN.C(69): error C202: 'i': undefined identifier
+MAIN.C(69): error C202: 'i': undefined identifier
+MAIN.C(69): error C202: 'i': undefined identifier
+MAIN.C(69): error C141: syntax error near ')'
+MAIN.C(70): error C141: syntax error near 'data'
+MAIN.C(78): error C141: syntax error near '*', expected ')'
+MAIN.C(79): error C202: 'uint32_t': undefined identifier
+MAIN.C(79): error C141: syntax error near 'datatem'
+MAIN.C(82): error C141: syntax error near 'data'
+main.c - 19 Error(s), 0 Warning(s).
+compiling main.c...
+MAIN.C(59): error C202: 'uint8_t': undefined identifier
+MAIN.C(59): error C141: syntax error near 'reg'
+MAIN.C(60): error C202: 'uint32_t': undefined identifier
+MAIN.C(60): error C141: syntax error near 'datatem'
+MAIN.C(61): error C202: 'reg': undefined identifier
+MAIN.C(62): error C202: 'reg': undefined identifier
+MAIN.C(69): error C141: syntax error near 'int'
+MAIN.C(69): error C202: 'i': undefined identifier
+MAIN.C(69): error C202: 'i': undefined identifier
+MAIN.C(69): error C202: 'i': undefined identifier
+MAIN.C(69): error C141: syntax error near ')'
+MAIN.C(70): error C141: syntax error near 'data'
+MAIN.C(78): error C141: syntax error near '*', expected ')'
+MAIN.C(79): error C202: 'uint32_t': undefined identifier
+MAIN.C(79): error C141: syntax error near 'datatem'
+MAIN.C(82): error C141: syntax error near 'data'
+main.c - 16 Error(s), 0 Warning(s).
+compiling main.c...
+MAIN.C(59): error C202: 'uint8_t': undefined identifier
+MAIN.C(59): error C141: syntax error near 'reg'
+MAIN.C(60): error C202: 'uint32_t': undefined identifier
+MAIN.C(60): error C141: syntax error near 'datatem'
+MAIN.C(61): error C202: 'reg': undefined identifier
+MAIN.C(62): error C202: 'reg': undefined identifier
+MAIN.C(69): error C141: syntax error near 'int'
+MAIN.C(69): error C202: 'i': undefined identifier
+MAIN.C(69): error C202: 'i': undefined identifier
+MAIN.C(69): error C202: 'i': undefined identifier
+MAIN.C(69): error C141: syntax error near ')'
+MAIN.C(78): error C141: syntax error near '*', expected ')'
+MAIN.C(79): error C202: 'uint32_t': undefined identifier
+MAIN.C(79): error C141: syntax error near 'datatem'
+main.c - 14 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(59): error C202: 'uint8_t': undefined identifier
+MAIN.C(59): error C141: syntax error near 'reg'
+MAIN.C(60): error C202: 'uint32_t': undefined identifier
+MAIN.C(60): error C141: syntax error near 'datatem'
+MAIN.C(61): error C202: 'reg': undefined identifier
+MAIN.C(62): error C202: 'reg': undefined identifier
+MAIN.C(69): error C141: syntax error near 'int'
+MAIN.C(69): error C202: 'i': undefined identifier
+MAIN.C(69): error C202: 'i': undefined identifier
+MAIN.C(69): error C202: 'i': undefined identifier
+MAIN.C(69): error C141: syntax error near ')'
+MAIN.C(78): error C141: syntax error near '*', expected ')'
+MAIN.C(79): error C202: 'uint32_t': undefined identifier
+MAIN.C(79): error C141: syntax error near 'datatem'
+Target not created
+compiling main.c...
+MAIN.C(60): error C202: 'uint32_t': undefined identifier
+MAIN.C(60): error C141: syntax error near 'datatemp'
+MAIN.C(61): error C202: 'datatemp': undefined identifier
+MAIN.C(69): error C141: syntax error near 'int'
+MAIN.C(69): error C202: 'i': undefined identifier
+MAIN.C(69): error C202: 'i': undefined identifier
+MAIN.C(69): error C202: 'i': undefined identifier
+MAIN.C(69): error C141: syntax error near ')'
+MAIN.C(78): error C141: syntax error near '*', expected ')'
+MAIN.C(79): error C202: 'uint32_t': undefined identifier
+MAIN.C(79): error C141: syntax error near 'datatem'
+main.c - 11 Error(s), 0 Warning(s).
+compiling main.c...
+MAIN.C(58): warning C280: 'len': unreferenced local variable
+MAIN.C(69): error C141: syntax error near 'int'
+MAIN.C(69): error C202: 'i': undefined identifier
+MAIN.C(69): error C202: 'i': undefined identifier
+MAIN.C(69): error C202: 'i': undefined identifier
+MAIN.C(69): error C141: syntax error near ')'
+MAIN.C(78): error C141: syntax error near '*', expected ')'
+MAIN.C(79): error C202: 'uint32_t': undefined identifier
+MAIN.C(79): error C141: syntax error near 'datatem'
+main.c - 8 Error(s), 1 Warning(s).
+compiling main.c...
+MAIN.C(58): warning C280: 'len': unreferenced local variable
+MAIN.C(69): error C141: syntax error near 'int'
+MAIN.C(69): error C202: 'i': undefined identifier
+MAIN.C(69): error C202: 'i': undefined identifier
+MAIN.C(69): error C202: 'i': undefined identifier
+MAIN.C(69): error C141: syntax error near ')'
+MAIN.C(78): error C141: syntax error near '*', expected ')'
+MAIN.C(79): error C202: 'uint32_t': undefined identifier
+MAIN.C(79): error C141: syntax error near 'datatem'
+main.c - 8 Error(s), 1 Warning(s).
+compiling main.c...
+MAIN.C(58): warning C280: 'len': unreferenced local variable
+MAIN.C(78): error C141: syntax error near '*', expected ')'
+MAIN.C(79): error C202: 'uint32_t': undefined identifier
+MAIN.C(79): error C141: syntax error near 'datatem'
+main.c - 3 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(58): warning C280: 'len': unreferenced local variable
+MAIN.C(78): error C141: syntax error near '*', expected ')'
+MAIN.C(79): error C202: 'uint32_t': undefined identifier
+MAIN.C(79): error C141: syntax error near 'datatem'
+Target not created
+compiling main.c...
+MAIN.C(58): warning C280: 'len': unreferenced local variable
+MAIN.C(79): error C202: 'uint32_t': undefined identifier
+MAIN.C(79): error C141: syntax error near 'datatem'
+main.c - 2 Error(s), 1 Warning(s).
+compiling main.c...
+MAIN.C(58): warning C280: 'len': unreferenced local variable
+MAIN.C(82): warning C206: 'weiteIC': missing function-prototype
+MAIN.C(82): error C267: 'weiteIC': requires ANSI-style prototype
+MAIN.C(95): error C231: 'weiteIC': redefinition
+MAIN.C(137): error C231: 'weiteIC': redefinition
+main.c - 3 Error(s), 2 Warning(s).
+compiling main.c...
+MAIN.C(102): warning C280: 'len': unreferenced local variable
+main.c - 0 Error(s), 1 Warning(s).
+compiling main.c...
+main.c - 0 Error(s), 0 Warning(s).
+compiling main.c...
+main.c - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_DRAWPOINT?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_UNDRAWPOINT?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?OLED_CLS?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?OLED_INIT?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_P6X8STR?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_P8X16STR?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_OLED_P16X16CH?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DRAW_BMP?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?AD7190_RESET_SERIAL?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_AD7190_WR8_SERIAL?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_AD7190_WR24_SERIAL?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?AD7190_RD32_SERIAL?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?AD7190_RD24_SERIAL?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?UART_INIT?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_UART_SENDSTRING?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_PROCESS_FRAME?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_PROCESS_COMMAND?MAIN
+Program Size: data=15.1 xdata=432 code=9863
+creating hex file from "spi_test"...
+"spi_test" - 0 Error(s), 17 Warning(s).

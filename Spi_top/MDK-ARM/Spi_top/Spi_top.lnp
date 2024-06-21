@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"spi_top\startup_stm32f103xe.o"
+"spi_top\main.o"
+"spi_top\gpio.o"
+"spi_top\usart.o"
+"spi_top\stm32f1xx_it.o"
+"spi_top\stm32f1xx_hal_msp.o"
+"spi_top\stm32f1xx_hal_gpio_ex.o"
+"spi_top\stm32f1xx_hal_tim.o"
+"spi_top\stm32f1xx_hal_tim_ex.o"
+"spi_top\stm32f1xx_hal_uart.o"
+"spi_top\stm32f1xx_hal.o"
+"spi_top\stm32f1xx_hal_rcc.o"
+"spi_top\stm32f1xx_hal_rcc_ex.o"
+"spi_top\stm32f1xx_hal_gpio.o"
+"spi_top\stm32f1xx_hal_dma.o"
+"spi_top\stm32f1xx_hal_cortex.o"
+"spi_top\stm32f1xx_hal_pwr.o"
+"spi_top\stm32f1xx_hal_flash.o"
+"spi_top\stm32f1xx_hal_flash_ex.o"
+"spi_top\stm32f1xx_hal_exti.o"
+"spi_top\system_stm32f1xx.o"
+"spi_top\ad9850.o"
+--library_type=microlib --strict --scatter "Spi_top\Spi_top.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Spi_top.map" -o Spi_top\Spi_top.axf

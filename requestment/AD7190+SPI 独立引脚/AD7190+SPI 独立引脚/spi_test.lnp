@@ -1,0 +1,4 @@
+"STARTUP.obj",
+"main.obj" 
+TO "spi_test" 
+RAMSIZE(256) 

@@ -1,0 +1,180 @@
+C51 COMPILER V9.00   MAIN                                                                  06/17/2024 15:36:14 PAGE 1   
+
+
+C51 COMPILER V9.00, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN main.OBJ
+COMPILER INVOKED BY: D:\EmbeddedDevelopment\keil_C51\C51\BIN\C51.EXE main.c LARGE BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1          #include<LQ12864.h>
+   2          #include<reg52.h>
+   3          #include<stdio.h>
+   4          #include <string.h>
+   5          #include<SPI_WR32bit.h>
+   6          
+   7          
+   8          
+   9          // 定义串口参数
+  10          #define RX_ENABLE 0x10 // 允许串口接收
+  11          #define TX_ENABLE 0x20 // 允许串口发送
+  12          #define BUFFER_SIZE 256
+  13          #define COMMAND_START 0x706C6179  //开始将启动SPI控制命令
+  14          #define COMMAND_DATA 0x64617461         //展示数据命令
+  15          
+  16           // 定义全局变量
+  17          unsigned char received_byte;
+  18          unsigned char RxBuffer[BUFFER_SIZE];   //接收数据
+  19          unsigned char aRxBuffer;                        //接收中断缓冲
+  20          unsigned char Uart1_Rx_Cnt = 0;         //接收缓冲计数
+  21          ulong datatem[8] = {
+  22                                          0xFFFFFFFF,
+  23                                          0x04600847,
+  24                                          0x19DF48C4,
+  25                                          0x00000000,
+  26                                          0x21D00000,
+  27                                          0x00000152,
+  28                                          0x6800006C,
+  29                                          0x00000000
+  30          };
+  31          
+  32           void weiteIC(ulong *datatem){
+  33   1                      ulong w;
+  34   1                      int i = 0;
+  35   1                      ad9850_fq_up=0;
+  36   1                      ad9850_rest=0;
+  37   1                      delay(200);
+  38   1                      ad9850_fq_up=1;
+  39   1                      ad9850_rest=1;
+  40   1              
+  41   1              for(i = 0; i<8;i++){
+  42   2                      ad9850_wr_serial(i,datatem[i]);
+  43   2              }
+  44   1              
+  45   1      
+  46   1                                                                       // 读SPI，放瘀血
+  47   1                      w=0x10;   
+  48   1                      for(i=0;i<8;i++)
+  49   1                              {
+  50   2                              ad9850_bit_data=(w<<i)&0x80;
+  51   2                              ad9850_w_clk=1;
+  52   2                              ad9850_w_clk=0;
+  53   2                              }        
+  54   1      
+  55   1                      ad9850_bit_data=1;
+C51 COMPILER V9.00   MAIN                                                                  06/17/2024 15:36:14 PAGE 2   
+
+  56   1                      ad9850_w_clk=1;
+  57   1                      ad9850_w_clk=0;
+  58   1      
+  59   1                  ad9850_bit_data=1;
+  60   1                      ad9850_w_clk=1;
+  61   1                      ad9850_w_clk=0;
+  62   1      
+  63   1                      ad9850_fq_up=0;
+  64   1                      ad9850_bit_data=1;
+  65   1                      ad9850_w_clk=1;
+  66   1                      ad9850_w_clk=0;
+  67   1                      ad9850_fq_up=1; 
+  68   1      
+  69   1                      for(i=0;i<100;i++)
+  70   1                              {
+  71   2                              ad9850_w_clk=1;
+  72   2                              ad9850_w_clk=0;
+  73   2                              }                                         //
+  74   1       }
+  75          
+  76          // 串口初始化函数
+  77          void UART_Init() {
+  78   1          SCON = 0x50; // 8位数据, 1位停止位, 不使用奇偶校验
+  79   1          TMOD &= 0x0F; // 清除低四位
+  80   1          TMOD |= 0x20; // 设置定时器1为模式2（8位自动重载）
+  81   1          TH1 = 0xfd;   // 根据下面的公式计算得到
+  82   1              TL1 = 0xfd; //设置比特率9600率
+  83   1          TR1 = 1; // 启动定时器1
+  84   1          ES = 1; // 使能串口中断
+  85   1          EA = 1; // 使能总中断
+  86   1      }
+  87          void UART_SendByte(uchar byte) {
+  88   1          SBUF = byte; // 发送数据
+  89   1          while (!TI); // 等待发送完成
+  90   1          TI = 0; // 清除发送中断标志
+  91   1      }
+  92          
+  93          void UART_SendString(const char *str) {
+  94   1          while (*str) {
+  95   2              UART_SendByte(*str++);
+  96   2          }
+  97   1      }
+  98          
+  99          /*
+ 100                  @function:把帧数据存储到data中                                                                          
+ 101          */
+ 102          void process_frame(unsigned char *frame, ulong *datatem) {
+ 103   1          unsigned char reg = frame[0];
+ 104   1          ulong datatemp = (frame[1] << 24) | (frame[2] << 16) | (frame[3] << 8) | frame[4];
+ 105   1                      datatem[reg] = datatemp;
+ 106   1                      printf("Received data (hex) in reg_bank[%d]: 0x%08X\n", reg ,datatem[reg]);
+ 107   1      }
+ 108          
+ 109          /*
+ 110                  @fuction:打印data中的数据
+ 111          */
+ 112          void printf_data(){
+ 113   1                      int i = 0;
+ 114   1                      for(;i<8;i++){
+ 115   2                      printf("reg:%d, 0x%08X\n",i,datatem[i]);                
+ 116   2                      }
+ 117   1                      printf("---------------\n");
+C51 COMPILER V9.00   MAIN                                                                  06/17/2024 15:36:14 PAGE 3   
+
+ 118   1      }
+ 119          /*
+ 120                  @function:处理命令
+ 121          */
+ 122          void process_command(unsigned char *frame,ulong *datatem) {
+ 123   1           ulong datatemp = (frame[1] << 24) | (frame[2] << 16) | (frame[3] << 8) | frame[4];
+ 124   1          switch (datatemp) {
+ 125   2              case COMMAND_START:
+ 126   2                  weiteIC(datatem);
+ 127   2                  break;
+ 128   2              case COMMAND_DATA:
+ 129   2                  printf_data();
+ 130   2                  break;
+ 131   2              default:
+ 132   2                  printf("Error control signal: 0x%08X\n", datatem);
+ 133   2                  break;
+ 134   2          }
+ 135   1      }
+ 136          
+ 137          
+ 138          
+ 139          
+ 140          
+ 141          
+ 142          void main()
+ 143          {
+ 144   1      
+ 145   1              while(1){
+ 146   2                      weiteIC(datatem);       
+ 147   2              }
+ 148   1       
+ 149   1                      
+ 150   1      }
+ 151          
+ 152          
+ 153          
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =   2823    ----
+   CONSTANT SIZE    =   5252    ----
+   XDATA SIZE       =    291     101
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)
